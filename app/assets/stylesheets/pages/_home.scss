@@ -17,9 +17,6 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 100px;
   font-weight: bold;
-  background: -webkit-linear-gradient(white, $primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
@@ -27,11 +24,11 @@
   justify-content: flex-end;
   font-size: larger;
   padding-right: 16px;
-  background: -webkit-linear-gradient(white, $primary);
+  background: -webkit-linear-gradient($white, $blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   &:hover {
-    background: -webkit-linear-gradient($primary, white);
+    background: -webkit-linear-gradient($darkblue, $white);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
@@ -49,5 +46,29 @@
   a {
     font-size: larger;
     padding: 8px;
+  }
+}
+
+
+.title {
+  font-size: 10vw;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url(https://images.unsplash.com/photo-1514401375831-85d3789fd515?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+  background-position-x: 0;
+  background-position-y: 72%;
+  background-repeat: repeat-x;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  animation: animateTitleWaves 40s linear infinite running;
+  outline: none;
+}
+@keyframes animateTitleWaves {
+  0% {
+    background-position-x: 0 0;
+  }
+  100% {
+    background-position-x: -200vw;
   }
 }
