@@ -3,4 +3,16 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def bio
+  end
+
+  def shows
+  end
+
+  def music
+  end
+
+  def booking
+  end
 end
