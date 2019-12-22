@@ -1,7 +1,6 @@
 .banner {
   background-size: cover;
   background-position: center;
-  // padding: 150px 0;
   height: 40vh;
 
 }
@@ -16,3 +15,21 @@
 
 
 
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  font-size: larger;
+  padding-right: 16px;
+  background: -webkit-linear-gradient($white, $blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  &:hover {
+    background: -webkit-linear-gradient($darkblue, $white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+  }
+}
