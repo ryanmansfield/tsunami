@@ -19,22 +19,6 @@
   font-weight: bold;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-  font-size: larger;
-  padding-right: 16px;
-  background: -webkit-linear-gradient($white, $blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  &:hover {
-    background: -webkit-linear-gradient($darkblue, $white);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-  }
-}
-
 .home-content {
   display: block;
   width: fit-content;
