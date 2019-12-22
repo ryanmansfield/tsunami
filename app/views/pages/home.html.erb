@@ -1,2 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://scontent-msp1-1.xx.fbcdn.net/v/t31.0-8/857066_699225503521062_2937917581656613269_o.jpg?_nc_cat=101&_nc_ohc=i3a21ChY6ywAQke7XQbb8QfZgYqavJh4KmhKg6wAQdUp9y8wjZezUTkBQ&_nc_ht=scontent-msp1-1.xx&oh=a49a2e4b71c17ed14e6aabb294e08c53&oe=5E6D2785);">
+  <div class="nav-links">
+    <%= link_to "Bio", bio_path, class: "nav-link" %>
+    <%= link_to "Shows", shows_path, class: "nav-link" %>
+    <%= link_to "Music", music_path, class: "nav-link" %>
+    <%= link_to "Booking", booking_path, class: "nav-link" %>
+  </div>
+  <div class="home-container">
+    <h1>Tsunami</h1>
+    <div class="social-links">
+      <a href="https://www.facebook.com/DJTsunami/" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://soundcloud.com/djtsunamichii?fbclid=IwAR1E7fFCVCcJpn2Q-n-L9wPFYu6Bh8dC5ZoO6rnVDBKTjb2HT1B6MXWXk5g" target="_blank">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+      <a href="https://www.instagram.com/djtsunami/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://open.spotify.com/artist/5UqnbnezI2TvaTWKwYhyrP" target="_blank">
+        <i class="fab fa-spotify"></i>
+      </a>
+    </div>
+  </div>
+</div>
