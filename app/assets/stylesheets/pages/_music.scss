@@ -2,18 +2,56 @@
   background-color: #010101;
   color: $white;
 }
-.players {
-  display: flex;
-}
+// .players {
+//   // display: flex;
+//   justify-content: space-between;
+// }
 
 .player {
   margin: 16px;
 }
 
-.soundcloud {
-  width: 70%;
-}
-
 .media-players {
   height: 75vh;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .players {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .players {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .players {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .players {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .players {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
