@@ -1,7 +1,6 @@
 .music {
   background-color: #010101;
-  color: white;
-  text-align: center;
+  color: $white;
 }
 .players {
   display: flex;
@@ -13,4 +12,8 @@
 
 .soundcloud {
   width: 70%;
+}
+
+.media-players {
+  height: 75vh;
 }

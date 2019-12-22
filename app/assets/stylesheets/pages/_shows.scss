@@ -1,12 +1,17 @@
-.shows {
+.shows-page {
   background-color: #010101;
-  color: white;
+  color: $white;
+}
+
+.shows {
+  height: 60vh;
 }
 
 .weekly {
   display: flex;
   justify-content: space-around;
 }
+
 
 .day {
   margin: 16px;
@@ -25,7 +30,6 @@
 }
 
 .show {
-  // margin: 8px;
   padding: 4px;
   display: flex;
   justify-content: space-between;
