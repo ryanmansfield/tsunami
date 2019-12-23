@@ -1,6 +1,7 @@
 class ShowsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
-  def index         # GET /shows
+  def index
+    @shows = Show.all
   end
 
   def show          # GET /shows/:id
