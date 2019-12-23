@@ -1,6 +1,5 @@
 class ShowsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
-
   def index         # GET /shows
   end
 
@@ -22,4 +21,4 @@ class ShowsController < ApplicationController
   def destroy       # DELETE /shows/:id
   end
 end
-end
+
