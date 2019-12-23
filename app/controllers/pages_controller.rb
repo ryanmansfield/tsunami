@@ -9,7 +9,4 @@ class PagesController < ApplicationController
 
   def music
   end
-
-  def booking
-  end
 end
