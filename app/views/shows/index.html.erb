@@ -44,16 +44,13 @@
     </div>
     <div class="container upcoming">
       <h2>Upcoming Shows</h2>
-      <div class="show">
-        <p>Sat 01/01</p>
-        <p>Day One</p>
-        <p>Prysm</p>
-      </div>
-      <div class="show">
-        <p>Wed 01/11</p>
-        <p>Out Cold feat. Bad Boy Bill & Farley JackMaster Funk</p>
-        <p>Prysm</p>
-      </div>
+      <% @shows.each do |show| %>
+        <div class="show">
+          <p><%= show.date %></p>
+          <p><%= show.name %></p>
+          <p><%= show.location %></p>
+        </div>
+      <% end %>
     </div>
   </div>
   <!-- Footer -->
