@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   get 'shows/new'
   get 'shows/update'
-  get 'shows/index'
+  get 'shows/index', to: 'shows#index', as: :shows
   get 'shows/show'
   devise_for :users
 
   get 'bio', to: 'pages#bio', as: :bio
-  get 'shows', to: 'pages#shows', as: :shows
+  # get 'shows', to: 'pages#shows', as: :shows
   get 'music', to: 'pages#music', as: :music
 
 
