@@ -7,10 +7,46 @@
     background-repeat: no-repeat;
 }
 
+// Home Container with responsivness
 .home-container {
   margin: 0px 150px;
   padding: 150px 0;
 }
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .home-container {
+    margin: 0px 16px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .home-container {
+    margin: 0px 16px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .home-container {
+    margin: 0px 150px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .home-container {
+    margin: 0px 150px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .home-container {
+    margin: 0px 150px;
+  }
+}
+
 
 .home h1 {
   padding: 4px;
