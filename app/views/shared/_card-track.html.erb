@@ -1,0 +1,14 @@
+<%@tracks.each do |track| %>
+  <div class="card">
+    <div class="card-track">
+      <% track.image %>
+      <img src="<%= track.image %>" />
+      <div class="card-track-infos">
+        <div>
+          <h2><%= track.name %></h2>
+        </div>
+        <h2 class="card-track-pricing"><%= track.artist %></h2>
+      </div>
+    </div>
+  </div>
+<% end %>

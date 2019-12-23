@@ -3,23 +3,14 @@
   <%= render 'shared/banner' %>
 
   <!-- Content -->
-  <div class="cards">
-    <% @tracks.each do |track| %>
-      <div class="card">
-        <div class="card-trip">
-          # <% track.image %>
-          <img src="<%= track.image %>" />
-          <div class="card-trip-infos">
-            <div>
-              <h2><%= track.name %></h2>
-            </div>
-            <h2 class="card-trip-pricing"><%= track.artist %></h2>
-          </div>
-        </div>
-      </div>
-    <% end %>
+  <div class="releases">
+    <h2>Orginal Releases</h2>
+    <div class="cards">
+      <%= render 'shared/card-track' %>
+    </div>
+    <div class="container media-players">
+
   </div>
-  <div class="container media-players">
 
     <h1>Listen Here</h1>
     <div class="players">
