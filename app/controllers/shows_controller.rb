@@ -1,15 +1,25 @@
 class ShowsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
-  def new
+  def index         # GET /shows
   end
 
-  def update
+  def show          # GET /shows/:id
   end
 
-  def index
+  def new           # GET /shows/new
   end
 
-  def show
+  def create        # POST /shows
   end
+
+  def edit          # GET /shows/:id/edit
+  end
+
+  def update        # PATCH /shows/:id
+  end
+
+  def destroy       # DELETE /shows/:id
+  end
+end
 end

@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  get 'shows/new'
-  get 'shows/update'
-  get 'shows/index', to: 'shows#index', as: :shows
-  get 'shows/show'
+
+  resources :shows
   devise_for :users
 
   get 'bio', to: 'pages#bio', as: :bio
