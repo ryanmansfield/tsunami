@@ -42,3 +42,62 @@ Show.create!(
     date: '10/12/2019',
 
 )
+
+puts "<<< Shows have been completed"
+
+# Tracks
+
+Track.destroy_all
+puts "<<< old trackss data erased"
+
+Track.create!(
+    name: 'Fly Butta',
+    artist: 'Tsunami',
+    image: 'https://geo-media.beatport.com/image/a7176c04-12d5-413a-8cb4-acb01bd91af0.jpg',
+
+)
+Track.create!(
+    name: 'Green Light District',
+    artist: 'Tsunami',
+    image: 'https://geo-media.beatport.com/image/9217fd2f-3ecd-4c26-96ec-d5c2fddfa1a8.jpg',
+
+)
+Track.create!(
+    name: 'Orchard Groove',
+    artist: 'Tsunami',
+    image: 'https://geo-media.beatport.com/image/1748ae74-c31c-4f45-b5d5-39dd37b4bdb4.jpg',
+
+)
+Track.create!(
+    name: 'JNNY',
+    artist: 'Tsunami',
+    image: 'https://geo-media.beatport.com/image/6b61e494-3f19-4a8e-b728-e7fa3c7f6f7d.jpg',
+
+)
+Track.create!(
+    name: 'Domina',
+    artist: 'Mike Vale, Tsunami',
+    image: 'https://geo-media.beatport.com/image/b1870e06-47d4-4478-9cec-cd0a7b9f69d5.jpg',
+
+)
+Track.create!(
+    name: 'Spitfire',
+    artist: 'Cooh, Tsunami, Markoman',
+    image: 'https://geo-media.beatport.com/image/e78e3832-0b96-4338-b6e8-f248f4f28a4c.jpg',
+
+)
+
+
+
+puts "<<< Tracks have been completed"
+puts "<<< Database seeding complete"
+
+
+
+
+
+
+
+
+
+

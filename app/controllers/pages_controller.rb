@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :bio, :music, :booking]
+  skip_before_action :authenticate_user!, only: [:home, :bio]
 
   def home
   end
@@ -7,6 +7,4 @@ class PagesController < ApplicationController
   def bio
   end
 
-  def music
-  end
 end
